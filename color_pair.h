@@ -1,6 +1,3 @@
-#include <iostream>
-#include <assert.h>
-
 #indef COLOR_PAIR_H
 #define COLOR_PAIR_H
 namespace TelCoColorCoder
