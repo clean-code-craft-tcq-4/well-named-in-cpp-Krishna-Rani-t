@@ -18,6 +18,9 @@ namespace TelCoColorCoder
         "Blue", "Orange", "Green", "Brown", "Slate"
     };
     int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
+    int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
+        return major * numberOfMinorColors + minor + 1;
+    }
     class ColorPair {
         private:
             MajorColor majorColor;
