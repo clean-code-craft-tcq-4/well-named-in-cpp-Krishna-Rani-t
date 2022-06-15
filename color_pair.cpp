@@ -1,4 +1,5 @@
 #include "color_pair.h"
+#include <cassert>
 #include<iostream>
 using namespace TelCoColorCoder;
 using namespace std;
