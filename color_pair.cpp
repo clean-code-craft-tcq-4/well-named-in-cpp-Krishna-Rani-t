@@ -9,7 +9,7 @@ ColorPair GetColorFromPairNumber(int pairNumber)
     return ColorPair(majorColor, minorColor);
 }
 
-void TelCoColorCoder::ColorPair::testNumberToPair(int pairNumber,
+void TelCoColorCoder::testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
 {
@@ -20,7 +20,7 @@ void TelCoColorCoder::ColorPair::testNumberToPair(int pairNumber,
     assert(colorPair.getMinor() == expectedMinor);
 }
 
-void TelCoColorCoder::ColorPair::testPairToNumber(
+void TelCoColorCoder::testPairToNumber(
     TelCoColorCoder::MajorColor major,
     TelCoColorCoder::MinorColor minor,
     int expectedPairNumber)
