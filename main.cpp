@@ -1,5 +1,3 @@
-#include <iostream>
-#include <assert.h>
 #include "color_pair.h"
 
 using namespace TelCoColorCoder;
