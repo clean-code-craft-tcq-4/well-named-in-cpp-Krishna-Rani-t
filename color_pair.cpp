@@ -1,6 +1,4 @@
 #include "color_pair.h"
-#include <cassert>
-#include<iostream>
 using namespace TelCoColorCoder;
 using namespace std;
 ColorPair ColorPair::GetColorFromPairNumber(int pairNumber) 
