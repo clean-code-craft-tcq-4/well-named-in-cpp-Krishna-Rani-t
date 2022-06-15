@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace TelCoColorCoder;
 using namespace std;
-ColorPair GetColorFromPairNumber(int pairNumber) 
+ColorPair ColorPair::GetColorFromPairNumber(int pairNumber) 
 {
     int zeroBasedPairNumber = pairNumber - 1;
     MajorColor majorColor = (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
