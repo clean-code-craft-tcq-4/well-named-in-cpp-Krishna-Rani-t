@@ -7,7 +7,6 @@ namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
     enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
-
     const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
@@ -46,5 +45,6 @@ namespace TelCoColorCoder
             void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
             void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
        };
+       ColorPair GetColorFromPairNumber(int pairNumber);
 }
 #endif
