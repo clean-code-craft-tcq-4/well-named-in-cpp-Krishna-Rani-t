@@ -40,7 +40,6 @@ namespace TelCoColorCoder
                colorPairStr += MinorColorNames[minorColor];
                return colorPairStr;
             }
-            void
        };
 }
 #endif
