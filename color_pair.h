@@ -16,6 +16,7 @@ namespace TelCoColorCoder
     const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "Slate"
     };
+    ColorPair GetColorFromPairNumber(int pairNumber) ;
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) ;
     int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
     class ColorPair {
@@ -41,7 +42,6 @@ namespace TelCoColorCoder
             }
             void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
             void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
-            ColorPair GetColorFromPairNumber(int pairNumber) ;
        };
 }
 #endif
