@@ -1,7 +1,8 @@
-#include <string>
-
 #ifndef COLOR_PAIR_H
 #define COLOR_PAIR_H
+#include <string>
+#include<iostream>
+#include<assert.h>
 namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
@@ -16,8 +17,6 @@ namespace TelCoColorCoder
     const char* MinorColorNames[] = {
         "Blue", "Orange", "Green", "Brown", "Slate"
     };
-    ColorPair GetColorFromPairNumber(int pairNumber) ;
-    int GetPairNumberFromColor(MajorColor major, MinorColor minor) ;
     int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
     class ColorPair {
         private:
@@ -40,6 +39,7 @@ namespace TelCoColorCoder
                colorPairStr += MinorColorNames[minorColor];
                return colorPairStr;
             }
+            ColorPair GetColorFromPairNumber(int pairNumber) ;
             void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
             void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
        };
