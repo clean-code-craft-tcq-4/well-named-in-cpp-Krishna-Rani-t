@@ -9,11 +9,6 @@ ColorPair GetColorFromPairNumber(int pairNumber)
     return ColorPair(majorColor, minorColor);
 }
 
-int GetPairNumberFromColor(MajorColor major, MinorColor minor) 
-{
-    return major * numberOfMinorColors + minor + 1;
-}
-
 void ColorPair::testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
