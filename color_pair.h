@@ -20,9 +20,6 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
-    ColorPair GetColorFromPairNumber(int pairNumber);
-    void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
-    void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
     class ColorPair {
         private:
             MajorColor majorColor;
@@ -45,5 +42,8 @@ namespace TelCoColorCoder
                return colorPairStr;
             }
        };
+       ColorPair GetColorFromPairNumber(int pairNumber);
+       void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
+       void testPairToNumber(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor, int expectedPairNumber);
 }
 #endif
