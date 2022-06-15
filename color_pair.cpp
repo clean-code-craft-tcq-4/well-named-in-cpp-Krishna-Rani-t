@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace TelCoColorCoder;
 using namespace std;
-ColorPair GetColorFromPairNumber(int pairNumber) 
+ColorPair ColorPair::GetColorFromPairNumber(int pairNumber) 
 {
     int zeroBasedPairNumber = pairNumber - 1;
     MajorColor majorColor = (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
@@ -16,7 +16,7 @@ int GetPairNumberFromColor(MajorColor major, MinorColor minor)
     return major * numberOfMinorColors + minor + 1;
 }
 
-void testNumberToPair(int pairNumber,
+void ColorPair::testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
 {
@@ -27,7 +27,7 @@ void testNumberToPair(int pairNumber,
     assert(colorPair.getMinor() == expectedMinor);
 }
 
-void testPairToNumber(
+void ColorPair::testPairToNumber(
     TelCoColorCoder::MajorColor major,
     TelCoColorCoder::MinorColor minor,
     int expectedPairNumber)
